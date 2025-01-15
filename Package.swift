@@ -4,21 +4,18 @@
 import PackageDescription
 
 let package = Package(
-  name: "Aho-Corasick",
+  name: "Aho-Corasik-Tree",
   products: [
     .library(
-      name: "Aho-Corasick",
-      targets: ["Aho-Corasick"]),
+      name: "Aho-Corasik-Tree",
+      targets: ["Aho-Corasik-Tree"]),
   ],
   targets: [
     .target(
-      name: "Aho-Corasick",
-      path: "Sources"
-    ),
+      name: "Aho-Corasik-Tree"),
     .testTarget(
-      name: "Aho-CorasickTests",
-      dependencies: ["Aho-Corasick"],
-      path: "Tests"
+      name: "Aho-Corasik-TreeTests",
+      dependencies: ["Aho-Corasik-Tree"]
     ),
   ]
 )
